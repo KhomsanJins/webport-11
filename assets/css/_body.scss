@@ -1,0 +1,2262 @@
+@charset 'UTF-8';
+
+
+// Nav Bar Responsive 
+.nav-bar-moblie {
+    display: none;
+}
+
+.name-head {
+    margin-bottom: 0 !important;
+}
+
+// Nav Haed
+.nav-head {
+    width: 100%;
+    height: 48px;
+    background-color: #42B8BB;
+    padding-top: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    .box-head {
+        color: #fff;
+    }
+
+    .box-login {
+        button {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 1rem;
+
+            svg {
+                padding-right: .5rem;
+            }
+
+            p {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+// Nav Nar
+.nav-bar {
+    margin-top: 48px;
+    padding: .5rem 0rem;
+    width: 100%;
+    background-color: #3C3832;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c000000', endColorstr='#1c000000', GradientType=1);
+    /* IE6-9 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.menu-bar {
+    ul {
+        align-items: center;
+    }
+
+    li {
+        margin: 0rem 1rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            // padding-bottom: 30px;
+        }
+
+        &:hover {
+            a {
+                color: #42B8BB;
+            }
+        }
+    }
+
+    .active {
+        a {
+            font-weight: 600;
+            color: #42B8BB;
+            // border-bottom: 3px solid #42B8BB;
+            font-family: "Kanit-Medium";
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 40px;
+                height: 3px;
+                background-color: #42B8BB;
+                display: block;
+                position: absolute;
+                left: 50%;
+                margin-left: -20px;
+                bottom: -33px;
+            }
+        }
+    }
+}
+
+.logo-thailawyerty {
+    width: 100px;
+}
+
+//  Search
+.search-top {
+    // background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+
+    svg {
+        width: 30px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    input {
+        background-color: #42B8BB;
+        padding: 0.3rem 0.5rem;
+        border: none;
+        border-radius: 15px;
+
+
+
+    }
+
+    ::placeholder {
+        color: #fff;
+    }
+}
+
+// Menu Mobile
+.menu-mobile {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #3C3832;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+
+    &.open {
+        transform: translateX(0);
+    }
+
+    .mobile-menusec {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        li {
+            margin: 1.5rem 0rem;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .active {
+            a {
+                color: #42B8BB;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        svg {
+            color: #fff;
+        }
+    }
+}
+
+/* Home Slide */
+
+////////// Index //////////
+
+// Main Home
+.main-home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7vh;
+    margin-top: 48px;
+    color: #fff;
+
+    .lSPager.lSpg {
+        position: absolute;
+        right: 0;
+        // bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        z-index: 1;
+        transform: translateY(-150%) !important;
+
+        >li {
+            display: inline-block;
+
+            a {
+                background: #fff;
+            }
+        }
+    }
+
+    .lSSlideOuter .lSPager.lSpg>li.active a,
+    .lSSlideOuter .lSPager.lSpg>li:hover a {
+        background-color: #42B8BB;
+    }
+
+    .lSSlideOuter .lSPager.lSpg>li a {
+        height: 10px;
+        width: 10px;
+    }
+
+    // .lSPrev {
+    //     display: none;
+    // }
+
+    // .lSNext {
+    //     display: none;
+    // }
+
+    .haed-main {
+        .head-title {
+            font-size: 3rem;
+            font-family: "Kanit-Medium";
+        }
+
+        .head-desc {
+            margin: 2rem 0rem !important;
+        }
+    }
+
+    .btn-home {
+        padding: 0.5rem 2rem;
+        background-color: #42B8BB;
+        color: #fff;
+
+        &:hover {
+            background-color: #49CDCF;
+            color: #fff;
+        }
+    }
+}
+
+#items-slide {
+    .slide-item {
+        height: 95.5vh;
+        padding-top: 38vh;
+    }
+}
+
+// The Lawyerty
+.box-haed {
+    margin-bottom: 2rem;
+}
+
+.view-more {
+    a {
+        color: #000;
+    }
+
+    &:hover {
+        a {
+            color: #42B8BB;
+        }
+    }
+}
+
+.title-main {
+    .title-main-icon {
+        background-color: #42B8BB;
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 3px;
+        max-width: 35px;
+        max-height: 35px;
+        min-width: 35px;
+        min-height: 35px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-main-head {
+        margin-left: 1rem;
+
+        h3 {
+            font-family: "Kanit-Medium";
+        }
+    }
+}
+
+.view-more {
+    a {
+        text-decoration: none;
+    }
+}
+
+.grid-iso-item {
+    width: calc(33.33% - 0rem);
+}
+
+.box-ourProject {
+    display: block;
+    margin: 0rem 0.5rem;
+
+    .desc {
+        color: #4A4A4A;
+    }
+
+    .content {
+        .title {
+            display: block;
+            margin-top: 1rem;
+            min-height: 52px;
+            color: #000;
+            font-family: "Kanit-Medium";
+        }
+
+        .desc {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #EEEEEE;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: 0;
+                display: block;
+                width: 40px;
+                height: 1.5px;
+                background-color: #42B8BB;
+            }
+        }
+
+        .link {
+            margin-top: 1rem;
+            padding-bottom: 2rem;
+            color: #000;
+            font-family: "Kanit-Medium";
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        .img-content {
+            background-color: #49CDCF;
+
+            img {
+                opacity: 0.35;
+            }
+        }
+
+        .content {
+            .title {
+                color: #49CDCF;
+            }
+
+            .link {
+                color: #49CDCF;
+            }
+        }
+    }
+}
+
+// Meet Lawyer
+.meet-lawyer {
+    margin: 7vh 0;
+    padding: 10rem 0rem;
+
+    .detail-box {
+        .headtitle {
+            color: #42B8BB;
+            font-style: italic;
+        }
+
+        .subtitle {
+            color: #fff;
+            font-weight: 200;
+        }
+
+        .title {
+            color: #fff;
+        }
+
+        .desc {
+            color: #fff;
+            padding: 1.5rem 0rem;
+        }
+
+        .btn-about {
+            color: #42B8BB;
+            padding: 0.5rem 2rem;
+            border: 1px solid #42B8BB;
+            margin-bottom: 3rem;
+
+            &:hover {
+                background-color: #42B8BB;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+
+.find-lawyer {
+    background-color: #42B8BB;
+    padding: 2rem 5rem;
+    align-items: center;
+    display: flex;
+
+    .find-head {
+        color: #fff;
+
+        .title {
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-style: italic;
+        }
+    }
+
+    .find-box {
+        display: flex;
+    }
+
+    .type-location {
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+
+    .lawyer-need {
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .icon {
+        width: 30px;
+        height: 48px;
+        font-size: 14px;
+        color: #42B8BB;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem 0.2rem;
+        border: 0px;
+    }
+
+    .btn-search {
+        width: 100%;
+        height: 48px;
+    }
+}
+
+// Law Clinic
+.law-clinic {
+    .head-form {
+        background-color: #42B8BB;
+        color: #fff;
+        padding: 1rem 2rem;
+    }
+
+    .box-form {
+        padding: 2rem;
+
+        .form-questions {
+            padding: 1rem;
+
+            h4 {
+                padding-bottom: 1rem;
+            }
+        }
+
+        .form-contact {
+            padding: 1rem;
+
+            h4 {
+                padding-bottom: 1rem;
+            }
+
+            .btn-submit {
+                padding: 0.5rem 2rem;
+                background-color: #42B8BB;
+                color: #fff;
+                width: 100%;
+                margin: 0.5rem 0rem;
+
+                &:hover {
+                    background-color: #49CDCF;
+                    color: #fff;
+                }
+            }
+
+            .box-contact {
+                margin-bottom: 1rem;
+            }
+
+            .form-input {
+                width: 100%;
+
+                .form-control {
+                    margin: 0.5rem 0rem;
+                }
+            }
+        }
+    }
+
+    .box-qeustion {
+        width: 100%;
+        height: 568px;
+        overflow-y: auto;
+        /* showing scrollbars */
+
+        li {
+
+            &:hover {
+                p {
+                    color: #42B8BB;
+                }
+            }
+        }
+
+        .box-bgwhite {
+            text-decoration: none;
+            padding: 1rem 2rem;
+
+            .head {
+                color: #000;
+            }
+        }
+
+        .box-bggray {
+            background-color: #EEEEEE;
+        }
+
+        svg {
+            color: #42B8BB;
+            font-size: 0.6rem;
+            // padding-right: 0.5rem;
+        }
+
+        .see-comment {
+            min-width: 130px;
+
+            svg {
+                color: #42B8BB;
+                font-size: 1rem;
+                // padding-left: 0.3rem;
+            }
+
+            p {
+                color: #42B8BB;
+                margin: 0rem 0.5rem;
+                // padding-left: 0.3rem;
+            }
+
+            .see {
+                min-width: 65px;
+            }
+
+            .comment {
+                min-width: 65px;
+            }
+        }
+    }
+}
+
+// Law Office Online
+.law-office {
+    margin: 7vh 0;
+
+    .detail-box {
+        padding: 15rem 0rem;
+        color: #fff;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        color: #42B8BB;
+    }
+
+    .box-desc {
+        padding: 1.5rem 0rem !important;
+    }
+
+    .btn-regist {
+        color: #fff;
+        padding: 0.5rem 2rem;
+        background-color: #42B8BB;
+
+        &:hover {
+            background-color: #49CDCF;
+            color: #fff;
+        }
+    }
+
+}
+
+// Exam Preparation
+.exam-preparation {
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.box-exam {
+    border: 1px solid #42B8BB;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 2%;
+
+    .exam-icon {
+        color: #42B8BB;
+        font-size: 1.5rem;
+        // padding-top: 1rem;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #42B8BB;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+    }
+
+    .exam-desc {
+        margin: 1rem 0rem;
+        color: #000;
+        font-family: "Kanit-Regular";
+
+        .head {
+            margin-bottom: 0.5rem;
+            height: 40px;
+        }
+    }
+
+    &:hover {
+        background-color: #42B8BB;
+        color: #fff;
+
+        .exam-icon {
+            background-color: #fff;
+            border: 0px;
+            box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+// Career Opportunity
+.career-opportunity {
+    background-color: #EEEEEE;
+    padding: 2.5rem 0rem;
+    margin-top: 2.5rem;
+    margin-bottom: -4rem;
+}
+
+
+
+////// The Lawyerty /////
+
+.banner-home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7vh;
+    margin-top: 48px;
+    color: #fff;
+
+    .path-menu {
+        margin: 0rem 0rem !important;
+        display: flex;
+
+        li {
+            margin-right: 0.5rem;
+            display: flex;
+
+            &:not(:nth-last-child(1)) {
+                &::after {
+                    content: '/';
+                    font-family: "Kanit";
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+
+            svg {
+                margin-right: 0.5rem;
+            }
+        }
+
+        .active {
+            a {
+                font-family: "Kanit-Medium";
+                color: #42B8BB;
+            }
+        }
+    }
+
+    .haed-main {
+        padding: 9rem 0rem 5rem 0rem;
+
+        .head-title {
+            font-size: 3rem;
+            font-family: "Kanit-Medium";
+        }
+
+        .head-desc {
+            margin: 2rem 0rem !important;
+        }
+    }
+}
+
+.head-main {
+    margin-bottom: 2.5rem;
+
+    .head {
+        margin-bottom: 1rem !important;
+        font-family: "Kanit-Medium";
+    }
+
+    .line-bottom {
+        width: 80px;
+        border-bottom: 2px solid #42B8BB;
+        margin: 0rem auto;
+    }
+}
+
+.sec-lawyerty {
+
+    .head-main {
+        margin-bottom: 2.5rem;
+
+        .head {
+            margin-bottom: 1rem;
+        }
+
+        .line-bottom {
+            width: 80px;
+            border-bottom: 2px solid #42B8BB;
+            margin: 0rem auto;
+        }
+    }
+
+    .nav-pills {
+        margin-bottom: 2rem !important;
+
+        li {
+            a {
+                margin: 0.5rem;
+                border: 1px solid #949494;
+                border-radius: 5px;
+                color: #000;
+
+                &:hover {
+                    color: #42B8BB;
+                    border: 1px solid #42B8BB;
+                }
+            }
+        }
+
+        .active {
+            background-color: #42B8BB !important;
+            border: 1px solid #42B8BB !important;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+////// The Lawyerty Detail /////
+.edit-menu {
+    background: #000;
+    display: none;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    list-style: none;
+    // padding: 0.5rem 0rem;
+
+    li {
+        color: #fff;
+        padding: .5rem 1rem;
+    }
+
+    &.active {
+        position: absolute;
+        z-index: 999;
+        display: block;
+    }
+}
+
+.post-reply {
+    display: none;
+    z-index: 999;
+    text-align: center;
+    list-style: none;
+    margin: 1rem 0rem !important;
+
+    &.active {
+        z-index: 999;
+        display: block;
+    }
+}
+
+.sec-lawyerty {
+    .line-bottom {
+        border-bottom: 1px solid #EEEEEE;
+        margin: 2rem 0rem;
+    }
+}
+
+.sec-content {
+    .box-date {
+        color: #42B8BB;
+        border-bottom: 2px solid #42B8BB;
+        margin: 1rem 0rem;
+
+        .date {
+            font-family: "Kanit-Medium";
+        }
+
+        .month {
+            margin-bottom: 0.5rem !important;
+        }
+    }
+}
+
+// Box Share Mobile
+.box-share-mobile {
+    margin: 2rem 0rem;
+
+    p {
+        margin-right: 0.5rem;
+    }
+
+    a {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        display: block;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        background-color: #42B8BB;
+        color: #fff;
+        line-height: 40px;
+
+        svg {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .share-social1 {
+        background-color: #5658C4;
+    }
+
+    .share-social2 {
+        background-color: #74C1F2;
+    }
+
+    .share-social3 {
+        background-color: #46C358;
+    }
+
+    .share-social4 {
+        background-color: #E04D4D;
+    }
+}
+
+.box-share {
+    margin: 2rem 0rem;
+
+    p {
+        margin-right: 1rem;
+    }
+
+    a {
+        text-align: center;
+        width: 120px;
+        display: block;
+        text-decoration: none;
+        padding: 0.2rem 1rem;
+        margin-right: 1rem;
+        border-radius: 4px;
+        background-color: #42B8BB;
+        color: #fff;
+
+        svg {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .share-social1 {
+        background-color: #5658C4;
+    }
+
+    .share-social2 {
+        background-color: #74C1F2;
+    }
+
+    .share-social3 {
+        background-color: #46C358;
+    }
+
+    .share-social4 {
+        background-color: #E04D4D;
+    }
+}
+
+.sec-comment {
+    .post-comment {
+        margin: 1rem 0rem;
+
+        svg {
+            margin-right: 0.5rem;
+        }
+
+        textarea {
+            height: 120px;
+            margin: 1.5rem 0rem;
+        }
+
+        button {
+            width: 100%;
+            margin: 0rem auto;
+            background-color: #42B8BB;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+////// Find Lawyer Detail /////
+.results {
+    margin-top: 2rem;
+}
+
+.lawyer-detail {
+    border: 1px solid #EEEEEE;
+    padding: 1.5rem;
+    margin: 1rem 0rem;
+
+    .box-detail {
+
+        .name {
+            font-family: "Kanit-Medium";
+        }
+
+        .position {
+            margin: 0.5rem 0rem !important;
+           
+        }
+
+        .call {
+            color: #42B8BB;
+            font-family: "Kanit-Medium";
+        }
+
+        .detail {
+            margin: 1rem 0rem !important;
+        }
+
+        a {
+            border: 2px solid #42B8BB;
+            color: #42B8BB;
+            background-color: #fff;
+
+            &:hover {
+                background-color: #42B8BB;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.img-lawyer {
+    margin-bottom: 1rem;
+    position: relative;
+    display: block;
+
+    .head {
+        font-weight: 600;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: #42B8BB;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-align: center;
+
+    }
+
+}
+
+.findlawyer-detail {
+    .box-premium {
+        .rate {
+            margin: 1rem 0rem;
+            font-weight: 600;
+        }
+
+        .btn-rate {
+            width: 30%;
+            background: none;
+            border: 2px solid #42B8BB;
+            color: #42B8BB;
+
+            i {
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                background-color: #42B8BB;
+                color: #fff;
+            }
+        }
+    }
+
+    .box-detail {
+
+        .name {
+            font-family: "Kanit-Medium";
+        }
+
+        .position {
+            margin: 0.5rem 0rem;
+        }
+
+        .call {
+            color: #42B8BB;
+            font-family: "Kanit-Medium";
+        }
+
+        .detail {
+            margin: 1rem 0rem !important;
+        }
+    }
+}
+
+// tab 1 2 3 >
+.nav-pages {
+    margin-bottom: 2rem;
+
+    li {
+        .nav-link {
+            margin: 0.5rem;
+            border: 1px solid #42B8BB;
+            color: #42B8BB;
+            border-radius: 5px;
+
+            &:hover {
+                color: #fff;
+                background-color: #42B8BB;
+            }
+        }
+
+        .nav-next {
+            color: #42B8BB;
+            margin: 0.5rem;
+        }
+
+        .active {
+            background-color: #42B8BB;
+            border: 1px solid #42B8BB;
+            color: #fff;
+
+        }
+    }
+}
+
+.q-lawyer {
+    width: 100%;
+    background-color: #42B8BB;
+    color: #fff;
+    padding: 1rem;
+}
+
+.box-question {
+    margin-bottom: 1rem;
+
+    a {
+        background-color: #42B8BB;
+        margin: 1rem 0rem;
+        color: #fff;
+    }
+}
+
+.form-question {
+    padding: 1rem;
+
+    .head {
+        margin: 1rem 0rem;
+        font-weight: 600;
+    }
+
+    .subhead {
+        margin: 1rem 0rem;
+    }
+}
+
+.sec-content {
+    .title {
+        margin: 1rem 0rem !important;
+        font-family: "Kanit-Medium";
+    }
+
+    .detail {
+        margin: 1rem 0rem !important;
+    }
+}
+
+
+
+
+////// Law Clinic Detail /////
+.box-white {
+    padding: 1.5rem 3rem;
+}
+
+.box-gray {
+    background-color: #EEEEEE;
+}
+
+.q-head {
+    i {
+        color: #42B8BB;
+        font-size: 10px;
+        margin-right: 0.5rem;
+    }
+}
+
+.path-detail {
+    margin: 1.5rem 0rem;
+    display: flex;
+
+    li {
+        // margin-right: 0.5rem;
+        display: flex;
+
+        &:not(:nth-last-child(1)) {
+            &::after {
+                content: '';
+                font-family: "Kanit";
+                color: #42B8BB;
+                border-right: 2px solid #42B8BB;
+                margin: 0rem 1rem;
+            }
+        }
+    }
+
+    .post-by {
+
+        .post {
+            margin-right: 0.5rem;
+        }
+
+        .username {
+            color: #42B8BB;
+        }
+    }
+}
+
+.user-date {
+    .username {
+        margin-right: 10px;
+        font-family: "Kanit-Medium";
+    }
+}
+
+.see-comment {
+    min-width: 130px;
+
+    svg {
+        color: #42B8BB;
+        font-size: 1rem;
+        // padding-left: 0.3rem;
+    }
+
+    p {
+        color: #42B8BB;
+        margin: 0rem 0.5rem;
+        // padding-left: 0.3rem;
+    }
+
+    .see {
+        min-width: 65px;
+    }
+
+    .comment {
+        min-width: 65px;
+    }
+}
+
+.answer-post {
+    .btn-rate {
+        color: #42B8BB;
+        margin: 1rem 0rem;
+        padding: 0px;
+        background: none;
+
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.answer-more {
+    .btn-more {
+        // display: block;
+        background: none;
+        border: 2px solid #42B8BB;
+        color: #42B8BB;
+        padding: .5rem 2rem;
+
+        &:hover {
+            background-color: #42B8BB;
+            color: #fff;
+        }
+    }
+}
+
+.lawclinic-question {
+    margin-bottom: 1rem;
+}
+
+
+
+
+////// Law Office Online /////
+.sec-lawofficeonline {
+    a {
+        text-decoration: none;
+    }
+}
+
+.create-detail {
+    .desc {
+        padding: 3rem;
+    }
+}
+
+.form-group {
+    margin-bottom: 3rem;
+
+    .mb-form {
+        margin-bottom: 1rem !important;
+        font-family: "Kanit-Medium";
+    }
+
+    .txt-or {
+        margin: 0rem auto 1rem auto;
+    }
+}
+
+.btn-getstarted {
+    width: 100%;
+    background-color: #42B8BB;
+    color: #fff;
+
+    &:hover {
+        background-color: #49CDCF;
+        color: #fff;
+    }
+}
+
+.box-cycle {
+    margin-top: 2rem;
+
+    .number {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0rem auto;
+        background-color: #42B8BB;
+        color: #fff;
+        line-height: 48px;
+        // position: relative;
+    }
+
+    .number1 {
+        border: 2px solid #979797;
+        background: none;
+        color: #000;
+        line-height: 46px;
+    }
+}
+
+.box-number {
+    width: 140px;
+    margin: 0rem 2rem;
+}
+
+.line-between {
+    border-top: 2px solid #979797;
+    width: 154px;
+    position: absolute;
+    top: 55px;
+    left: auto;
+}
+
+.line-between1 {
+    border-top: 2px solid #42B8BB;
+}
+
+
+
+
+////// CreatePremium Page /////
+.sec-createpremium {
+
+    .detail-box {
+        margin: 2rem 0 0 0;
+
+        .title {
+            color: #42B8BB;
+            font-family: "Kanit-Medium";
+        }
+
+        .box-desc {
+            padding: 1.5rem 0rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        .box-regist {
+            border: 2px solid #42B8BB;
+            border-radius: 5px;
+            padding: 1.5rem;
+            margin: 1rem 0rem;
+        }
+
+        .regist-desc {
+            color: #000;
+
+            .head {
+                font-family: "Kanit-Medium";
+            }
+            
+            .desc {
+                margin: 1.5rem 0rem !important;
+            }
+        }
+
+        .btn-regist {
+            width: 100%;
+            background-color: #42B8BB;
+            color: #fff;
+        }
+
+        &:hover {
+            color: #fff;
+
+            .box-regist {
+                background-color: #42B8BB;
+                color: #fff;
+            }
+
+            .regist-desc {
+                color: #fff;
+            }
+
+            .btn-regist {
+                width: 100%;
+                background-color: #fff;
+                color: #42B8BB;
+            }
+        }
+    }
+
+    .premium-desc {
+        .head {
+            color: #42B8BB;
+        }
+    }
+
+    .icon-premium {
+        svg {
+            font-size: 100px;
+            color: #42B8BB;
+            margin: 1rem 0rem;
+        }
+    }
+}
+
+.path-lawoffice {
+    li {
+        display: flex;
+
+        &::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            // color: #42B8BB;
+            font-weight: 900;
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+
+
+////// Exam Preparation Page /////
+.box-download {
+    margin-bottom: 2rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.download-file {
+    border-bottom: 1px solid #BFBFBF;
+    padding: 1rem;
+}
+
+
+
+.box-partner {
+    margin-bottom: 2rem;
+
+    .img-partner {
+        margin: 1rem 0rem;
+
+        img {
+            padding: 0rem 1rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+
+////// Career Opporunity Page /////
+.career-desc {
+    .show-desccareer {
+        .date {
+            color: #979797;
+            margin: 1rem 0rem;
+        }
+
+        .career {
+            margin: 1rem 0rem;
+        }
+
+        .salary {
+            margin: 1rem 0rem;
+        }
+    }
+}
+
+.box-career {
+    a {
+        text-decoration: none;
+    }
+}
+
+.box-careerProject {
+    margin-bottom: 2rem;
+
+    .desc {
+        color: #4A4A4A;
+        margin: 0.5rem 0rem;
+    }
+
+    .content {
+        margin-bottom: 2rem;
+
+        .desc {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #EEEEEE;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: 0;
+                display: block;
+                width: 40px;
+                height: 1.5px;
+                background-color: #42B8BB;
+            }
+        }
+
+        .career {
+            margin: 0.5rem 0rem;
+        }
+
+        .salary {
+            margin: 0.5rem 0rem;
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #49CDCF;
+
+        .img-content {
+            background-color: #49CDCF;
+
+            img {
+                opacity: 0.35;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+////// About Us Page /////
+.desc-about {
+    margin: 2rem 0rem;
+
+    .line-head {
+        width: 100px;
+        border-bottom: 2px solid #42B8BB;
+        margin: 1rem 0rem;
+    }
+}
+
+// Subscribe Now
+.sec-subscribe {
+    background-color: #3C3832;
+    margin-top: 5rem;
+    padding: 3rem 0rem;
+}
+
+.subscribe-email {
+    .head {
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        margin-bottom: .5rem;
+    }
+
+    button {
+        width: 100%;
+        background-color: #42B8BB;
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.line-box {
+    border-bottom: 2px solid #42B8BB;
+    margin: 1rem 0rem;
+}
+
+.address-contact {
+    color: #fff;
+
+    .head {
+        margin: 1rem 0rem;
+    }
+}
+
+.box-map {
+    margin-bottom: -70px;
+}
+
+
+// Footer
+.sec-footer {
+    background-color: #3C3832;
+    color: #fff;
+    padding: 5rem 0rem;
+    margin-top: 4rem;
+
+    .img-footer {
+        img {
+            width: 15%;
+            padding: 2rem 0rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+.menu-footer {
+    li {
+        margin: 0rem 1rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &:hover {
+            a {
+                color: #42B8BB;
+            }
+        }
+    }
+
+    .active {
+        a {
+            font-weight: 600;
+            color: #42B8BB;
+        }
+    }
+}
+
+.footer-desc .desc {
+    padding-bottom: 1rem;
+    width: 50%;
+    margin: 0px auto;
+}
+
+
+//  ตั้งแต่หน้าจอ 767 ลงมา
+@media only screen and (max-width:767px) {
+
+    ///// Index Page
+
+    // Nav Bar
+    .nav-bar-moblie {
+        display: block;
+
+        padding: 0.5rem 0rem;
+        width: 100%;
+        background-color: #42B8BB;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .nav-head {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .btn-user {
+        padding: 0px;
+        background: none;
+        color: #fff;
+    }
+
+    .mobile-menu {
+        margin-top: 64px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background-color: #fff;
+    }
+
+    .main-logo {
+        width: 60px;
+    }
+
+    // Main Home
+    .main-home {
+        margin-top: 61px;
+
+        // .lSSlideOuter .lSPager.lSpg {
+        //     display: block;
+
+        // }
+
+        .haed-main {
+            .head-title {
+                font-size: 2.3rem;
+                font-family: "Kanit-Medium";
+            }
+
+            .head-desc {
+                margin: 1rem 0rem !important;
+            }
+        }
+    }
+
+    #items-slide {
+        .slide-item {
+            height: auto;
+            padding: 4.8rem 0rem;
+        }
+    }
+
+    // The Lawyerty Grid Iso Item
+    .grid-iso-item {
+        width: calc(100% - 0rem);
+    }
+
+    .view-more-mobile {
+        a {
+            color: #42B8BB;
+
+        }
+    }
+
+    .title-main {
+        .title-main-icon {
+            background-color: #42B8BB;
+            color: #fff;
+            font-size: 0.9rem;
+            line-height: 3px;
+            max-width: 35px;
+            max-height: 35px;
+            min-width: 35px;
+            min-height: 35px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-main-head {
+            margin-left: 0.5rem;
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            h3 {
+                font-family: "Kanit-Medium";
+            }
+        }
+    }
+
+    .dropdown-item {
+        padding: .5rem 1rem;
+    }
+
+    .dropdown-menu.show {
+        position: absolute;
+        z-index: 9999;
+        transform: translate3d(0px, -280px, 0px);
+        top: 0px;
+        left: 0px;
+        will-change: transform;
+    }
+
+    // Meet Lawyer
+    .meet-lawyer {
+        margin: 7vh 0;
+        padding: 5rem 0rem;
+
+        .detail-box {
+            .headtitle {
+                color: #42B8BB;
+                font-style: italic;
+            }
+
+            .subtitle {
+                color: #fff;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #42B8BB;
+            }
+
+            .title {
+                color: #fff;
+                font-size: 2.3rem;
+                font-weight: 600;
+            }
+
+            .desc {
+                padding: 1.2rem 0rem;
+            }
+        }
+    }
+
+    .find-lawyer {
+        padding: 2rem 0rem;
+
+        .type-location {
+            margin-top: 1rem;
+        }
+
+
+        .lawyer-need {
+            margin-top: 1rem;
+        }
+
+        .btn-search {
+            margin-top: 1rem;
+        }
+    }
+
+    .find-box {
+        display: block !important;
+    }
+
+    // Law Clinic
+    .law-clinic {
+        .box-form {
+            padding: 0rem;
+        }
+
+        .box-qeustion {
+            .box-bgwhite {
+                padding: 1rem 1rem;
+
+                .head {
+                    color: #000;
+                }
+            }
+
+            .box-bggray {
+                padding: 1rem 1rem;
+            }
+        }
+    }
+
+    // Law Office Online
+    .law-office {
+        margin: 7vh 0;
+
+        .detail-box {
+            padding: 5rem 0rem;
+            color: #fff;
+        }
+
+        .title {
+            font-size: 2.3rem;
+            color: #42B8BB;
+        }
+    }
+
+    // Footer
+    .sec-footer {
+        padding: 3rem 0rem;
+
+        .img-footer {
+            img {
+                width: 40%;
+                padding: 0 0 1rem 0;
+            }
+        }
+    }
+
+    .footer-desc .desc {
+        width: 100%;
+    }
+
+    ///// The Lawyerty Page
+
+    // Banner Home
+    .banner-home {
+        margin-top: 61px;
+
+        .haed-main {
+            padding: 2rem 0rem;
+
+            .head-title {
+                font-size: 1.5rem;
+                font-family: "Kanit-Medium";
+            }
+        }
+    }
+
+    // Select
+    .custom-btn {
+        display: block;
+        width: 100%;
+        background-color: #42B8BB;
+        border: #42B8BB;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    .btn-secondary:hover {
+        color: #fff;
+        background-color: #42B8BB;
+        border-color: #42B8BB;
+    }
+
+    .show>.btn-secondary.dropdown-toggle {
+        color: #fff;
+        background-color: #42B8BB;
+        border-color: #42B8BB;
+    }
+
+    .box-submenu {
+        width: 100%;
+        position: absolute;
+        transform: translate3d(0px, 36px, 0px);
+        top: -2px;
+        left: 0px;
+        will-change: transform;
+    }
+
+    ///// Law Clinic
+    .box-white {
+        padding: 1.5rem 1rem;
+    }
+
+    .path-detail {
+        margin: 1rem 0rem;
+        display: block;
+
+        li {
+            display: flex;
+
+            &:not(:nth-last-child(1)) {
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+        }
+    }
+
+    ///// Law Office Online
+
+    // CreateUser
+    .create-detail {
+        .desc {
+            padding: 2rem 0rem;
+        }
+    }
+
+    .box-cycle {
+        margin-top: 2rem;
+
+        .number {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .number1 {
+            line-height: 36px;
+        }
+    }
+
+    .box-number {
+        width: 100px;
+        margin: 0rem 1rem;
+    }
+
+    .line-between {
+        width: 94px;
+        position: absolute;
+        top: 52px;
+        left: auto;
+    }
+
+    .line-between1 {
+        border-top: 2px solid #42B8BB;
+    }
+
+    // createPremium
+    .sec-createpremium {
+        .detail-box {
+            .title {
+                color: #42B8BB;
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    ///// About Us
+    .desc-about {
+        .head {
+            font-size: 2.3rem;
+        }
+    }
+
+    .subscribe-email {
+        .head {
+            font-size: 2.3rem;
+        }
+    }
+
+}
+
+//  ตั้งแต่หน้าจอ 768 ถึง 1366
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    ///// Index Page
+
+    .menu-mobile {
+        .close-menu {
+            svg {
+                font-size: 2rem;
+            }
+        }
+
+        .mobile-menusec {
+            li {
+                a {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .main-logo {
+        width: 70px;
+    }
+
+    // Nav Bar
+    .nav-bar-moblie {
+        padding: 0.5rem 0rem;
+        width: 100%;
+        background-color: #42B8BB;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+
+        display: block;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav-head {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .btn-user {
+        padding: 0px;
+        background: none;
+        color: #fff;
+    }
+
+    .mobile-menu {
+        margin-top: 64px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background-color: #fff;
+    }
+
+
+    // Main Home
+    .main-home {
+        margin-top: 68.5px;
+
+        .lSSlideOuter .lSPager.lSpg {
+            display: block;
+
+        }
+
+        .haed-main {
+            .head-title {
+                font-size: 2.3rem;
+                font-family: "Kanit-Medium";
+            }
+
+            .head-desc {
+                margin: 1rem 0rem !important;
+            }
+        }
+    }
+
+    #items-slide {
+        .slide-item {
+            height: auto;
+            padding: 7rem 0rem;
+        }
+    }
+
+    // The Lawyerty
+    .content {
+        .title {
+            font-size: 1rem;
+        }
+    }
+
+    // Meet Lawyer
+    .meet-lawyer {
+        margin: 7vh 0;
+        padding: 5rem 0rem;
+
+        .detail-box {
+            .title {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+    .find-box {
+        display: block !important;
+
+        .type-location {
+            margin-top: 1rem;
+        }
+
+
+        .lawyer-need {
+            margin-top: 1rem;
+        }
+
+        .btn-search {
+            margin-top: 1rem;
+        }
+    }
+
+    // Law Clinic
+    .law-clinic .box-form {
+        padding: 0rem;
+    }
+
+    .law-clinic .box-qeustion {
+        height: 502px;
+    }
+
+    .law-clinic .box-form .form-contact .btn-submit {
+        padding: 0.5rem 1rem;
+    }
+
+    // Law Office Online
+    .law-office .detail-box {
+        padding: 5rem 0rem;
+    }
+
+    .law-office .title {
+        font-size: 2.3rem;
+    }
+
+    // Footer
+    .sec-footer .img-footer img {
+        width: 20%;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .menu-footer {
+        display: none !important;
+    }
+
+
+    ///// The Lawyerty 
+    // Banner Home
+    .banner-home {
+        margin-top: 68.5px;
+
+        .haed-main {
+            padding: 3rem 0rem;
+
+            .head-title {
+                font-size: 1.5rem;
+                font-family: "Kanit-Medium";
+            }
+        }
+    }
+
+    ///// Law Clinic
+    .path-detail {
+        margin: 1rem 0rem;
+        display: block;
+
+        li {
+            display: flex;
+
+            &:not(:nth-last-child(1)) {
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .img-lawyer {
+        .head {
+            padding: 0.5rem 0rem;
+            text-align: center;
+            font-size: .7rem;
+
+        }
+    }
+
+    ///// About Us
+    .desc-about {
+        margin: 0rem;
+
+        .head {
+            font-size: 2.3rem;
+        }
+    }
+
+    .subscribe-email {
+        .head {
+            font-size: 2.3rem;
+        }
+    }
+}
